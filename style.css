@@ -155,13 +155,7 @@
     #imgs5,
     #imgs6,
     #imgs7 {
-/*        width: 80%;
-        height: 450px;
-        position: absolute;
-        left: 310px;
-        top: 114px;
-        overflow: hidden;
-        margin-left: 110px;*/
+
     }
     
     #next {
@@ -175,7 +169,7 @@
         position: absolute;
         top: 0;
         bottom: 100px;
-        right: 340px;
+        right: 352px;
         margin: auto 10px;
         z-index: 99;
         cursor: pointer;
