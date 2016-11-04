@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style type="text/css">
+    body {
+        width: 100%;
+        background-color: #272301;
+    }
+    
+    .container {
+        width: 100%;
+        height: 700px;
+        margin: auto;
+    }
+    
+    .header-section {
+        width: 100%;
+        height: 90px;
+        background-color: #272301;
+        border-bottom: 3px, 75%, dashed, #bfbfbf;
+    }
+    
+    ul#nav {
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    #tagli-2 {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    #taga-2 {
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #272301;
+        color: #bfbfbf;
+        font-style: normal;
+        font-weight: normal;
+        font-family: 'Open Sans Condensed' sans-serif, cursive;
+        font-size: 16px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        font-weight: 350;
+        font-size: 1.3em;
+        position: relative;
+        left: 880px;
+        top: 20px;
+    }
+    
+    .left-section {
+        float: left;
+        width: 20%;
+        height: 650px;
+        background-color: #272301;
+        display: inline-block;
+    }
+    
+    #tag1 {
+        font-family: 'Indie Flower', cursive;
+        font-weight: 400;
+        font-size: 5.0em;
+        color: #c91212;
+        margin-left: 20px;
+        margin: 0;
+        position: relative;
+        bottom: 10px;
+        margin-left: 30px;
+        text-align: center;
+    }
+    
+    #h3-tag {
+        font-family: 'Indie Flower', cursive;
+        font-weight: 400;
+        font-size: 2.8em;
+        color: #c91212;
+        margin: 0;
+        text-align: center;
+        position: relative;
+        bottom: 19px;
+    }
+    
+    h2#hamburger.hidden-md.hidden-lg {
+        color: blue;
+    }
+    
+    #nav-1 {
+        margin-left: 45px;
+        margin-top: 33px;
+    }
+    
+    #nav-1,
+    #mobileNav {
+        font-family: 'Open Sans Condensed', sans-serif;
+        list-style: none;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    #mobileNav {
+        display: none;
+        margin: 20px;
+        position: relative;
+        bottom: 80px;
+    }
+    
+    #mobileNav li {
+        display: inline-block;
+    }
+    
+    #tagli-3 {
+        margin-bottom: 20px;
+    }
+    
+    #nav-1 li a {
+        text-decoration: none;
+        color: #bfbfbf;
+    }
+    
+    #nav-1 li a:hover {
+        color: #c91212;
+        background-color: #bfbfbf;
+    }
+    
+    #nav-1 li.active {
+        background-color: #bfbfbf;
+        color: #ff5252;
+    }
+    
+    #mobileNav li a {
+        text-decoration: none;
+        color: #bfbfbf;
+        margin-left: 20px;
+    }
+    
+    #mobileNav li a:hover {
+        color: #c91212;
+        background-color: #bfbfbf;
+    }
+    
+    #mobileNav li.active {
+        background-color: #bfbfbf;
+        color: #ff5252;
+    }
+    
+    .middle-section {
+        background-color: #272301;
+        width: 80%;
+        height: 650px;
+        display: inline-block;
+    }
+    
+    .image {
+        width: 70%;
+        height: 300px;
+        margin-left: 10px;
+    }
+    
+    .wineGlass {
+        background-image: url("images/wine.jpg");
+        background-image: url("images/wine.jpg");
+        background-size: cover;
+    }
+    
+    p {
+        color: #bfbfbf;
+    }
+    
+    h4.tag-h4 {
+        color: #c91212;
+    }
+    
+    .form_name {
+        width: 800px;
+        height: 160px;
+        background-color: #c91212;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    
+    #label-1 {
+        margin-right: 5px;
+        margin-left: 10px;
+        margin-top: 20px;
+        color: #bfbfbf;
+    }
+    
+    #label-2 {
+        margin-right: 5px;
+        margin-left: 80px;
+        margin-top: 20px;
+        color: #bfbfbf;
+    }
+    
+    #label-3 {
+        margin-right: 45px;
+        margin-left: 10px;
+        color: #bfbfbf;
+    }
+    
+    #label-4 {
+        margin-right: 5px;
+        margin-left: 80px;
+        color: #bfbfbf;
+    }
+    
+    #book {
+        margin-top: 10px;
+        margin-left: 330px;
+        background-color: #bfbfbf;
+        color: #c91212;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .footer-section {
+        width: 100%;
+        height: 90px;
+        display: inline-block;
+        background-color: #272301;
+    }
+
+    
+    /*---media queries---*/
+    /* Tablet */
+    
+    @media (max-width: 980px) {
+        .container {
+            width: 700px;
+        }
+        .form_name,
+        #nav-1 {
+            display: block;
+        }
+    }
+    /* Mobile */
+    
+    @media (max-width: 742px) {
+        .container {
+            width: 80%;
+        }
+        .showNav {
+            display: block;
+        }
+    }
+    
+    @media (max-width:500px) {
+        #tagli-3 {
+            margin-bottom: 20px;
+            font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+            color: #eeff00;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h2 class="hidden-md hidden-lg" id="hamburger" onClick="toggleNav()">&#9776;</h2>
+            <ul id="nav">
+                <div>
+                    <h4 id=""><li id="tagli-2"><a id="taga-2" href="reservations.html">Reservation</a></li></h4></div>
+            </ul>
+        </div>
+        <div class="mobile-nav">
+            <ul id="mobileNav">
+                <li id="tagli-3"><a href="index.html">Home</a></li>
+                <li id="tagli-3"><a href="about.html">About</a></li>
+                <li id="tagli-3"><a href="menus.html">Menus</a></li>
+                <li id="tagli-3"><a href="gallery.html">Gallery</a></li>
+                <li id="tagli-3"><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+        <div class="left-section hidden-sm hidden-xs">
+            <h1 id="tag1">B&P<h3 id="h3-tag">Main</h3></h1>
+            <ul id="nav-1">
+                <li id="tagli-3"><a href="index.html">Home</a></li>
+                <li id="tagli-3"><a href="about.html">About</a></li>
+                <li id="tagli-3"><a href="menus.html">Menus</a></li>
+                <li id="tagli-3"><a href="gallery.html">Gallery</a></li>
+                <li id="tagli-3"><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+        <div class="middle-section">
+            <div class="image wineGlass">
+            </div>
+            <div id="firstRow" class="row">
+                <div class="col-md-12 content">
+                    <br>
+                    <h4 class="tag-h4">BOOK A PRIVATE EVENT WITH B&P </h4>
+                    <p> Beyond the dazzling wall-to-wall window views that feature sights 500 ft. over Philadelphia,we also serve unrivaled delicacies</p>
+                    <p> from our critically acclaimed chef driven menu of seasonal American cuisine. We offer: private room, business, industry events.</p>
+                    <p>Our event takes care of all custom detail and gathering, a lounge cocktail hour.
+                    </p>
+                </div>
+                <form class="form_name" name="form_name" onsubmit="return checkForBlanck()">
+                    <label id="label-1" for="first_name">FIRST NAME:</label>
+                    <input id="firstN" type="text" name="FIRST NAME" size="30"></input>
+                    <label id="label-2" for="last_name">LAST NAME:</label>
+                    <input id="lastN" type="text" name="LAST NAME" size="30"></input>
+                    <br>
+                    <br>
+                    <label id="label-3" for="email">EMAIL:</label>
+                    <input id="email" type="text" name="EMAIL" size="30"></input>
+                    <label id="label-4" for="questions/comments">QUESTIONS:</label>
+                    <input id="questions" type="text" name="QUESTIONS/COMMENTS" size="30"></input>
+                    <br>
+                    <br>
+                    <input id="book" type="submit" value="BOOK NOW" size="20" /></input>
+                </form>
+            </div>
+        </div>
+        <div class="footer-section"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/finalpro.js"></script>
+    <script type="text/javascript">
+    function checkForBlanck() {
+        var errormessage = '';
+        if (document.getElementById('firstN').value == "") {
+            errormessage += 'sypply your First NAME \n';
+            // alert('please supply your First Name.');
+
+        }
+        if (document.getElementById('lastN').value == "") {
+            errormessage += 'sypply your Last NAME \n';
+            // alert('please supply your Last Name.');
+
+        }
+        if (document.getElementById('email').value == "") {
+            errormessage += 'sypply your email \n';
+            // alert('please supply your email.');
+
+        }
+        if (document.getElementById('questions').value == "") {
+            errormessage += 'supply a comments or any questions \n';
+            // alert('supply a comments or any questions');
+            document.getElementById('questions').style.borderColor = '#10167f';
+        }
+        if (errormessage != "") {
+            alert(errormessage);
+            return false;
+        }
+    }
+
+    //Adding a hamburger bar using js
+    function toggleNav() {
+        // debugger
+        $('#mobileNav').toggle();
+    }
+    </script>
+</body>
+
+</html>

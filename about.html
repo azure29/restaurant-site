@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="about.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h2 class="hidden-md hidden-lg" id="hamburger" onClick="toggleNav()">&#9776;</h2>
+            <ul id="nav">
+                <div>
+                    <h4 id=""><li id="tagli-2"><a id="taga-2" href="reservations.html">Reservation</a></li></h4></div>
+            </ul>
+        </div>
+        <div class="mobile-nav">
+            <ul id="mobileNav">
+                <li id="tagli-3"><a href="index.html">Home</a></li>
+                <li id="tagli-3"><a href="about.html">About</a></li>
+                <li id="tagli-3"><a href="menus.html">Menus</a></li>
+                <li id="tagli-3"><a href="gallery.html">Gallery</a></li>
+                <li id="tagli-3"><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+        <div class="left-section hidden-sm hidden-xs">
+            <h1 id="tag1">B&P<h3 id="h3-tag">Main</h3></h1>
+            <ul id="nav-1">
+                <li id="tagli-3"><a href="index.html">Home</a></li>
+                <li id="tagli-3"><a href="about.html">About</a></li>
+                <li id="tagli-3"><a href="menus.html">Menus</a></li>
+                <li id="tagli-3"><a href="gallery.html">Gallery</a></li>
+                <li id="tagli-3"><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+        <div class="middle-section">
+            <div id="firstRow" class="row">
+                <div class="col-md-6 content">
+                    <h2 class="tag-h5">About </h2>
+                    <p>A sleek, sophisticated restaurant and private event space, B&P sits 500 feet above the city on the 37th floor of Two Liberty Place and features wall-to-wall unobstructed, breathtaking panoramic views that span for over 40 miles.</p>
+                    <p> With its bird’s-eye views of Philadelphia and creative French cuisine by Chef Liliane , B&P sets the scene for some of the city’s most spectacular culinary experiences.</p>
+                </div>
+                <div class="col-md-6 content">
+                    <div class="img-about"></div>
+                </div>
+            </div>
+            <div id="secondRow" class="row">
+                <div class="col-md-12 content-1">
+                    <h4>THE ATMOSPHERE</h4>
+                    <p> Your arrival at B&P begins with an exclusive elevator ride to the 37th floor of Two Liberty Place. At the bar lounge where hand-crafted cocktails </p>
+                    <p> wrap-around best seating to grab a drink with friends and watch the sunset. Enjoy a memorable meal in the dining room featuring professional, attentive service and spectacular panoramic views of Philadelphia.</p>
+                </div>
+            </div>
+            <div id="thirdRow" class="row">
+                <div class="col-md-12 content-2">
+                    <h4>PRIVATE MOMENTS</h4>
+                    <p>We will work closely with you and will personally attend to every detail to create an event that will meet your specific needs and exceed your expectations.The private dining options at B&P are as boundless as the view.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript">
+    function toggleNav() {
+        // debugger
+        $('#mobileNav').toggle();
+    }
+    </script>
+</body>
+
+</html>

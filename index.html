@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project/Bea</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h2 class="hidden-md hidden-lg" id="hamburger" onClick="toggleNav()">&#9776;</h2>
+            <ul id="nav">
+                <div>
+                    <h4 id=""><li id="tagli-2"><a id="taga-2" href="reservations.html">Reservation</a></li></h4></div>
+            </ul>
+        </div>
+        <div class="mobile-nav">
+            <ul id="mobileNav">
+                <li id="tagli-3"><a href="index.html">Home</a></li>
+                <li id="tagli-3"><a href="about.html">About</a></li>
+                <li id="tagli-3"><a href="menus.html">Menus</a></li>
+                <li id="tagli-3"><a href="gallery.html">Gallery</a></li>
+                <li id="tagli-3"><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+        <div class="left-section hidden-sm hidden-xs">
+            <h1 id="tag1">B&P<h3 id="h3-tag">Main</h3></h1>
+            <ul id="nav-1">
+                <li id="tagli-3"><a href="index.html">Home</a></li>
+                <li id="tagli-3"><a href="about.html">About</a></li>
+                <li id="tagli-3"><a href="menus.html">Menus</a></li>
+                <li id="tagli-3"><a href="gallery.html">Gallery</a></li>
+                <li id="tagli-3"><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+        <div class="middle-section">
+            <div class="imgs" id="slider">
+                <img id="imgs1" src="images/slider/slider-1.jpg">
+                <img id="imgs2" src="images/slider/slider-2.jpg">
+                <img id="imgs3" src="images/slider/slider-3.jpg">
+                <img id="imgs4" src="images/slider/slider-4.jpg">
+                <img id="imgs5" src="images/slider/slider-5.jpg">
+                <img id="imgs6" src="images/slider/slider-6.jpg">
+                <img id="imgs7" src="images/slider/slider-7.jpg">
+            </div>
+            <div id="next">&rang;</div>
+            <div id="prev">&lang; </div>
+            <div>
+                <h4 id=""><li id="li-tag"><a id="cafe" href="cafe.html">B&P Cafe</a></li></h4>
+            </div>
+        </div>
+        <div class="footer-section"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+    $('#slider').cycle({
+        // fx: 'scrollHorz',
+        next: '#next',
+        prev: '#prev',
+        timeout: 3000,
+        pause: 1,
+        width: 733
+    });
+
+    function toggleNav() {
+        $('#mobileNav').toggle();
+    }
+    </script>
+</body>
+
+</html>
